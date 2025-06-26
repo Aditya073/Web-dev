@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact page</title>
+
+        <style>
+            input{
+                display: flex;
+                justify-content: center;
+            }
+
+            .contant{
+                height: fit-content;
+                width: fit-content;
+                border: 4px solid #73e386;
+                border-radius: 20px;
+                box-shadow: 10px 10px 5px lightblue;
+                padding: 15px;
+            }
+
+            button{
+                background-color: #2b5af4;
+                color: white;
+                border-radius: 5px;
+                padding: 5px 5px;
+            }
+        
+            label{
+                color: #00ff2a;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+        </style>
+    </head>
+    <body style="background-color: #f4f4f4;">
+        <div class="contant">
+
+        
+        <h1 style="color:#20bc44" >Form</h1>
+        <br />
+        <label>Name </label>
+        <input type="text" name="name" placeholder="Enter here" style="width: 300px; height: 30px;">
+        <br />
+        <br />
+
+        <label>Emale </label>
+        <input type="email" name="emale" placeholder="Enter here" style="width: 300px; height: 30px;">
+        <br />
+        <br />
+
+        <label>Phone number </label>
+        <input type="tel" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="123-456-7890" style="width: 300px; height: 30px;">
+        <br />
+        <br />
+
+        <label>Age </label>
+        <input type="number" name="age" placeholder="Enter here" style=" height: 30px;">
+        <br />
+
+        <h3 style="color: #31dc1a;">Gender</h3>
+        <input type="radio" name="Gender" style="display: inline-block;">
+        <label> Male</label>
+        <input type="radio" name="Gender" style="display: inline-block;">
+        <label> Female</label>
+        <br />
+        <br />
+
+        <label>Review </label>
+        <input type="text" name="review" placeholder="Enter your experience"  style="width: 300px; height: 30px;">
+        <br />
+        <br />
+
+        <button>Submit</button>
+
+
+        <a href="index.html" style="margin: 10px;">Home page</a>
+    
+    </div>
+    </body>
+</html>
