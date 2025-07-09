@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= user.name %> - Portfolio</title>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><%= user.name %></h1>
+      <p><%= user.role %></p>
+    </div>
+
+    <div class="row">
+      <!-- Left Column -->
+      <div class="left-column">
+        <div class="contact">
+          <h2>📞 Contact</h2>
+          <p><strong>Mobile:</strong> <%= user.mobile %></p>
+          <p><strong>Email:</strong> <%= user.email %></p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <div class="profile">
+          <h2>👤 Profile</h2>
+          <p><%= user.description %></p>
+        </div>
+
+        <div class="education">
+          <h2>🎓 Education</h2>
+          <ul>
+            <% user.education.forEach(function(item) { %>
+              <li><%= item %></li>
+            <% }) %>
+          </ul>
+        </div>
+
+        <div class="projects">
+          <h2>📂 Projects</h2>
+          <ul>
+            <% user.projects.forEach(function(project) { %>
+              <li><%= project %></li>
+            <% }) %>
+          </ul>
+        </div>
+
+        <div class="skills">
+          <h2>🛠 Technical Skills</h2>
+          <ul>
+            <% user.skills.forEach(function(skill) { %>
+              <li><%= skill %></li>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

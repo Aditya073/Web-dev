@@ -1,0 +1,21 @@
+{
+  "name": "Aditya Dixit",
+  "role": "Electronics Engineering Student",
+  "mobile": "+91 83XXXXXX93",
+  "email": "adityadixit1200@gmail.com",
+  "description": "My name is Aditya Dixit. I am a student at Mumbai University. Currently in my second year, branch: electronic engineering. I have a strong interest in programming and I’m always eager to learn new languages and frameworks. Along with my academics, I enjoy building projects that combine hardware and software.",
+  "education": [
+    "John XXIII CBSE School",
+    "Vidyalankar Institute of Technology, Mumbai University"
+  ],
+  "projects": [
+    "Rock, Paper & Scissor Game",
+    "Bank Application Program",
+    "Hotel Management Program"
+  ],
+  "skills": [
+    "C Language",
+    "Java",
+    "Python"
+  ]
+}
